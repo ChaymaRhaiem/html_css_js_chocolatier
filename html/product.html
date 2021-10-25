@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>product details</title>
+    <link rel="stylesheet" href="../css/product.css" media="screen">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script class="script" type="text/javascript" src="../js/jquery.js" defer=""></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="../js/controle.js"> </script>
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+
+
+
+</head>
+
+<body>
+
+
+    <header id="header-region" class="header cf">
+        <!--<nav class=" nav header cf"  id="nav-menu"> !-->
+        <nav class="navbar navbar-expand-sm  navbar-dark bg-dark bg-transparent ">
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav"
+                aria-expanded="false">
+                <!---  <span class="sr-only">
+              Toggle navigation
+            </span> -->
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+
+            <div class="navbar-brand header__logo-container">
+                <a href="/" class=" is-logo">
+                    <img class="nav-logo-dark" src="../images/KAKAO72__logo1.png" width="180" height="35"
+                        alt="chocolate-logo">
+                    <img class="nav-logo-white" src="../images/kakao72__white.png" width="180" height="35"
+                        alt="chcolate-logo">
+                </a>
+            </div>
+
+            <div class="header__menu-items-container">
+                <div class="collapse navbar-collapse" id="collapsable-nav">
+                    <ul class=" header__items navbar-nav mr-auto">
+                        <li class="header__item nav-item active">
+                            <a class="header__link nav-link" href="../index.html">Home <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="header__item nav-item">
+                            <a class="header__link nav-link" href="#">Shop now </a>
+                        </li>
+                       
+                        <li class="header__item nav-item">
+                            <a class=" header__link nav-link disabled" href="../html/package.html" tabindex="-1"
+                                aria-disabled="true">packaging</a>
+                        </li>
+
+                        <li class="header__item nav-item">
+                            <a class=" header__link nav-link disabled" href="../html/personal.html" tabindex="-1"
+                                aria-disabled="true">personalisation</a>
+                        </li>
+
+                        <li>
+                            <!--search form!-->
+                            <div class="header__item">
+                                <div id="search-region">
+                                    <form action="search" method="get" id="btn-2">
+                                        <input class="search__input" type="search"
+                                            placeholder="What are you searching little chocoholic?">
+                                    </form>
+                                </div>
+
+                            </div>
+                            <button class="search__btn  btn hi "> Search </button>
+                        </li>
+
+                        <li>
+
+
+                            <div class="header__item  toggle-cart header__cart" onclick="toggle()">
+
+
+                                <img class="header__cart-img" alt="cart__img" src="../images/cart-icon-white.svg"
+                                    width="30" height="30">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+
+            </div>
+
+
+        </nav>
+    </header>
+    <section class="main_content clearfix">
+        <div class="bg_swirls left clearfix">
+            <div class="bg_swirls right clearfix">
+                <div class="container clearfix">
+                    <div class="col-md-12 col-sm-12 hidden-xs breadcrumbs">
+                        <ul class="breadcrumb">
+                            <li>
+                                <a class="back" href="../index.html">
+                                    <span class="s">
+                                        Back
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-sm-6 mb mt">
+                        <div class="relative">
+                            <img class="img-responsive" src="../images/carton.png" alt=" ">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 mb mt">
+                        <div class="mb">
+                            <h1 class="sku_small"> Champagne Pairing Selection - Box of 24 Chocolates
+                            </h1>
+                            <div class="ornamental big">
+                                <div class="personalisation__page__icon-container">
+                                    <img src="https://max-chocolatier-backend.s.simplificator.com//uploads/cq_pages/page_values/image_field_translation/value/1398/en/huge_truffl.png"
+                                        class="personalisation__page__icon" alt="" />
+                                </div>
+                            </div>
+                            Mixed truffles & pralines Ingredients: sugar, cocoa mass, fresh cream, cocoa butter, butter,
+                            hazelnuts, strawberries, raspberries, lime, passion fruit, whole milk powder, skimmed milk
+                            powder, whey powder (milk), feuillitine (wheatflour, sugar, butterfat, vegetable fat, milk
+                            sugar, milk proteins, salt, barley malt flour, raising agent: sodium bicarbonate), invert
+                            sugar, almonds, water, glucose syrup, sorbitol, invertase, fully hydrogenated coconut fat,
+                            salt, emulsifier: soya lecithin, E471, spices, cocoa nibs, tea, coffee, honey, natural
+                            flavourings, trace amounts of colours E100/ 102/ 104/ 110/ 120/124/ 129/ 132/ 133/ 142/ 171/
+                            172.
+
+
+                        </div>
+                        <form  method="post"
+                            id="productForm" name="productForm" class="">
+                        
+                            <div class="starprice">
+                                30dt
+                                <div id="PRICE_DIV_VAT">
+                                    <div id="PRICE_RR_DIV_VAT">
+                                    </div>
+                                    <div class="price_holder">
+                                        <div class="product_details mt mb clearfix">
+                                            <ul class="clearfix">
+                                                <li>
+                                                    <label for="itemqty" class="qty">Qty</label>
+                                                </li>
+                                                <li>
+                                                    <select name="itemqty" id="item401qty" size="1"
+                                                        class="form-control">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                        <option value="6">6</option>
+                                                        <option value="7">7</option>
+                                                        <option value="8">8</option>
+                                                        <option value="9">9</option>
+                                                        <option value="10">10</option>
+                                                        <option value="11">11</option>
+                                                        <option value="12">12</option>
+                                                        <option value="13">13</option>
+                                                        <option value="14">14</option>
+                                                        <option value="15">15</option>
+                                                        <option value="16">16</option>
+                                                        <option value="17">17</option>
+                                                        <option value="18">18</option>
+                                                        <option value="19">19</option>
+                                                        <option value="20">20</option>
+                                                        <option value="21">21</option>
+                                                        <option value="22">22</option>
+                                                        <option value="23">23</option>
+                                                        <option value="24">24</option>
+                                                        <option value="25">25</option>
+                                                        <option value="26">26</option>
+                                                        <option value="27">27</option>
+                                                        <option value="28">28</option>
+                                                        <option value="29">29</option>
+                                                        <option value="30">30</option>
+                                                        <option value="31">31</option>
+                                                        <option value="32">32</option>
+                                                        <option value="33">33</option>
+                                                        <option value="34">34</option>
+                                                        <option value="35">35</option>
+                                                        <option value="36">36</option>
+                                                        <option value="37">37</option>
+                                                        <option value="38">38</option>
+                                                        <option value="39">39</option>
+                                                        <option value="40">40</option>
+                                                        <option value="41">41</option>
+                                                        <option value="42">42</option>
+                                                        <option value="43">43</option>
+                                                        <option value="44">44</option>
+                                                        <option value="45">45</option>
+                                                        <option value="46">46</option>
+                                                        <option value="47">47</option>
+                                                        <option value="48">48</option>
+                                                        <option value="49">49</option>
+                                                        <option value="50">50</option>
+                                                        <option value="51">51</option>
+                                                        <option value="52">52</option>
+                                                        <option value="53">53</option>
+                                                        <option value="54">54</option>
+                                                        <option value="55">55</option>
+                                                        <option value="56">56</option>
+                                                        <option value="57">57</option>
+                                                        <option value="58">58</option>
+                                                        <option value="59">59</option>
+                                                        <option value="60">60</option>
+                                                        <option value="61">61</option>
+                                                        <option value="62">62</option>
+                                                        <option value="63">63</option>
+                                                        <option value="64">64</option>
+                                                        <option value="65">65</option>
+                                                        <option value="66">66</option>
+                                                        <option value="67">67</option>
+                                                        <option value="68">68</option>
+                                                        <option value="69">69</option>
+                                                        <option value="70">70</option>
+                                                        <option value="71">71</option>
+                                                        <option value="72">72</option>
+                                                        <option value="73">73</option>
+                                                        <option value="74">74</option>
+                                                        <option value="75">75</option>
+                                                        <option value="76">76</option>
+                                                        <option value="77">77</option>
+                                                        <option value="78">78</option>
+                                                        <option value="79">79</option>
+                                                        <option value="80">80</option>
+                                                        <option value="81">81</option>
+                                                        <option value="82">82</option>
+                                                        <option value="83">83</option>
+                                                        <option value="84">84</option>
+                                                        <option value="85">85</option>
+                                                        <option value="86">86</option>
+                                                        <option value="87">87</option>
+                                                        <option value="88">88</option>
+                                                        <option value="89">89</option>
+                                                        <option value="90">90</option>
+                                                        <option value="91">91</option>
+                                                        <option value="92">92</option>
+                                                        <option value="93">93</option>
+                                                        <option value="94">94</option>
+                                                        <option value="95">95</option>
+                                                        <option value="96">96</option>
+                                                        <option value="97">97</option>
+                                                        <option value="98">98</option>
+                                                        <option value="99">99</option>
+                                                        <option value="100">100</option>
+                                                    </select>
+                                                </li>
+                                                <li class="">
+                                                    <div class="products__btns-container">
+
+
+                                                        <button class="products__product-item-btn">
+                                                            <span class="text-container"> Add to cart </span>
+                                                            <span class="icon-container"> </span>
+                                                        </button>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <p class="mt" > </p>
+                                        </div>
+                                    </div>
+                        </form>
+                        <ul class="row list-unstyled"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container clearfix">
+            <div class="col-md-6 bmt">
+                <div id="TabbedPanels1" class="TabbedPanel">
+                    <ul class="TabbedPanelsTabGroup clearfix">
+                        <li class="TabbedPanelsTab TabbedPanelsTabSelected">Details</li>
+                        <li class="TabbedPanelsTab" onclick="toggle__diet()">Dietary</li>
+                        <li class="TabbedPanelsTab">
+                            <a class="" href="#" >Delivery</a>
+                        </li>
+                    </ul>
+                    <div class="TabbedPanelsContentGroup pad">
+                        <div class="TabbedPanelsContent cms TabbedPanelsContentVisible" style="display: block;">
+                            <h4 style="text-align: center;">Fruits and Flowers Spring Selection</h4>
+                            <p>A colourful box of fresh, fruity and floral flavoured chocolates inspired by
+                                Spring!</p>
+                            <p>
+                                This ornate gold and white box, tied with a colourful ribbon, is filled with a
+                                selection of Iain's award-winning Velvet Truffles® and Pralines
+                                <sup>.</sup>
+                                Real fruit and natural spice infused truffles and pralines, all thinly enrobed
+                                in milk or single origin São Tomé
+                                <em />
+                                dark chocolate.
+                            </p>
+                            <p>Item may differ slightly from selection shown. Ribbon colour may vary.</p>
+                            <p></p>
+                        </div>
+                        <div class="TabbedPanelsContent cms" id="useful__info" style="display: none;">
+                            <p>
+                                Ingredients: sugar, cocoa mass,
+                            <b> cream </b>
+                                , cocoa butter,
+                                <b>butter</b>
+                                ,
+                                <b>hazelnuts</b>
+                                , strawberry, raspberry, lime, blackcurrant, passionfruit, whole & skimmed
+                                <b>milk</b>
+                                powders,
+                                <b>milk</b>
+                                whey powder,
+                                <b>wheat</b>
+                                flour,
+                                <b>butterfat</b>
+                                , sunflower oil,
+                                <b>milk</b>
+                                sugar,
+                                <b>milk</b>
+                                protein, barleymalt flour, raising agent: sodium bicarbonate, invert sugar,
+                                molasses, glucose syrup, salt, emulsifier:
+                                <b>soya</b>
+                                lecithin, spices, cocoa nibs, tea, coffee, honey, liquorice, flavourings,
+                                colours E100/101/102/104/ 110/120/124/129/132/133/142/171/172.
+                            </p>
+                            <p>Dark chocolate contains minimum solids 70% cocoa, milk chocolate min. 35%
+                                cocoa/14% milk solids, white chocolate min. 27% milk solids. Store sealed below
+                                18C</p>
+                            <p>All Iain's chocolates are alcohol free and suitable for vegetarians. No
+                                artificial flavourings are used.</p>
+                            <p>
+                                Please
+                                <a href="../index.html">Contact Us</a>
+                                if you have any specific questions or requests.
+                            </p>
+                        </div>
+                        <div class="TabbedPanelsContent cms" style="display: none;">
+                            <a  href="#">Delivery</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 bmt">
+                <div class="col-xs-12 col-sm-8 col-md-9">
+                    Rating:
+                    <img src="../images/star.png" star" />
+                    <img src="../images/star.png" alt="star" />
+                    <img src="../images/star.png" alt="star" />
+                    <img src="../images/star.png" alt="star" />
+                    <img src="../images/star.png" alt="star" />
+                    <a href="#">
+                    (11 reviews) </a>
+                    <span class="toggle-reviews">View all</span>
+                </div>
+                <br>
+                <div class="hidden-xs col-sm-4 col-md-3 customer_review">
+                    <b>Posted</b>
+                </div>
+                <div class="hidden-xs col-sm-4 col-md-3 customer_review">
+                    <b>Rating</b>
+                </div>
+                <div class="hidden-xs col-sm-4 col-md-3 customer_review">
+                    <b>Comment</b>
+                </div>
+                <hr>
+                <div class="col-xs-12 col-sm-4 col-md-3 customer_review">
+                    <small>Thu 6th May 2021</small>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-3 customer_review">
+                    <img src="../images/star.png" alt="star" />
+                    <img src="../images/star.png" alt="star" />
+                    <img src="../images/star.png" alt="star" />
+                    <img src="../images/star.png" alt="star" />
+                    <img src="../images/star.png" alt="star" />
+
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-6 customer_review">
+                    Luxurious, velvety absolutely wonderful great for a special gift for that special person
+                    <br>
+                </div>
+                <hr>
+                <div class="col-xs-12 col-sm-4 col-md-3 customer_review">
+                    <small>Thu 7th May 2021</small>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-3 customer_review">
+                    <img src="../images/star.png" alt="star" />
+                    <img src="../images/star.png" alt="star" />
+                    <img src="../images/star.png" alt="star" />
+                    <img src="../images/star.png" alt="star" />
+                    <img src="../images/star.png" alt="star" />
+
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-6 customer_review">
+                    We loved the variety of flavours, and the chocolates look beautiful, too. A real treat!
+                    <br>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-12 sku_margin_fix" id="related">
+        </div>
+        </div>
+        </div>
+
+        <div class="col-md-12 sku_margin_fix" id="related">
+            <div class="grad">
+                <div class="title">You may also enjoy...</div>
+                <div class="row">
+                    <div class="col-md-2 col-sm-4 col-xs-12">
+                        <div class="product mb related">
+                            <a
+                                href="#">
+                                <img class="img-responsive" alt="Berry Selection Box - Box of 9 Chocolates"
+                                    src="../images/smalleggs.jpg" >
+                            </a>
+                            <div class="product_title">
+                                <a
+                                    href="#">Berry
+                                    Selection Box - Box of 9 Chocolates</a>
+                            </div>
+                            <div class="product_price">
+                                <span class="price_n">17.95</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-12">
+                        <div class="product mb related">
+                            <a
+                                href="#">
+                                <img class="img-responsive" alt=" Berry Selection Box - Box of 30 Chocolates"
+                                    src="../images/topeggs.jpg ">
+                            </a>
+                            <div class="product_title">
+                                <a
+                                    href="#">Berry
+                                    Selection Box - Box of 30 Chocolates</a>
+                            </div>
+                            <div class="product_price">
+                                <span class="price_n">49.95</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2 col-sm-4 col-xs-12">
+                        <div class="product mb related">
+                            <a
+                                href="#">
+                                <img class="img-responsive" alt=" Berry Selection Box - Box of 30 Chocolates"
+                                    src="../images/set.jpg" >
+                            </a>
+                            <div class="product_title">
+                                <a
+                                    href="#">Berry
+                                    Selection Box - Box of 30 Chocolates</a>
+                            </div>
+                            <div class="product_price">
+                                <span class="price_n">49.95</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2 col-sm-4 col-xs-12">
+                        <div class="product mb related">
+                            <a
+                                href="#">
+                                <img class="img-responsive" alt=" Berry Selection Box - Box of 30 Chocolates"
+                                    src="../images/smalleggs.jpg" />
+                            </a>
+                            <div class="product_title">
+                                <a
+                                    href="#">Berry
+                                    Selection Box - Box of 30 Chocolates</a>
+                            </div>
+                            <div class="product_price">
+                                <span class="price_n">£49.95</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-12">
+                        <div class="product mb related">
+                            <a
+                                href="#">
+                                <img class="img-responsive" alt=" Berry Selection Box - Box of 30 Chocolates"
+                                    src="../images/set.jpg" />
+                            </a>
+                            <div class="product_title">
+                                <a
+                                    href="#">Berry
+                                    Selection Box - Box of 30 Chocolates</a>
+                            </div>
+                            <div class="product_price">
+                                <span class="price_n">£49.95</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-12">
+                        <div class="product mb related">
+                            <a
+                                href="#">
+                                <img class="img-responsive" alt=" Berry Selection Box - Box of 30 Chocolates"
+                                    src="../images/whitebox.jpg" />
+                            </a>
+                            <div class="product_title">
+                                <a
+                                    href="#">Berry
+                                    Selection Box - Box of 30 Chocolates</a>
+                            </div>
+                            <div class="product_price">
+                                <span class="price_n">£49.95</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <div id="cart-region">
+        <div class="cart-container">
+            <div class="cart-overlay js-overlay "></div>
+            <div class="cart" data-test="cart">
+                <div class="cart__header"> <span class="cart__header-shopping-text">Order summary </span>
+                    <span class="js-cart-counter">(1) </span>
+                    <img src="../images/close.png" width="30" height="30" alt="close-icon"
+                        class="cart__header-close js-cart">
+
+
+                </div>
+
+                <div class="cart__items cart-items">
+                    <div class="list-item">
+
+                        <div class="cart__item">
+
+
+                            <div class="cart__delete-item js-delete-item">
+                                <span class="cart__delete-item-text">Remove</span>
+
+                            </div>
+                            <div class="cart__product-image">
+                                <img src="../images/carton.png" alt="" class="cart__product-image ">
+                            </div>
+                            <div class="cart__product-text"> 24 truffles box
+                                <div class="cart__product-title"></div>
+                                <div class="cart__product-price"></div>
+                                <div class="cart__quantity">
+                                    <span class="cart__quantity-title">Quantity</span>
+                                    <div class="cart__quantity-counter">
+                                        <input type="number" class="cart__quantity-value" value="1">
+                                        <span role="button" class="cart__quantity-counter-decrease"
+                                            onclick="decrement()"> - </span>
+                                        <span role="button" class="cart__cantity-counter-increase "
+                                            onclick="increment()">+</span>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+</div>
+</div>
+</div>
+</body>

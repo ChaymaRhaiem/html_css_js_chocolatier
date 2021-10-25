@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <title>personalise</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script class="script" type="text/javascript" src="../js/jquery.js" defer=""></script>
+
+  <link rel="stylesheet" href="../css/personalise.css" media="screen">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script src="../js/controle.js"> </script>
+
+  <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+
+</head>
+
+<body>
+  <header id="header-region">
+    <!--<nav class=" nav header cf"  id="nav-menu"> !-->
+    <nav class="navbar navbar-expand-sm  navbar-dark bg-dark bg-transparent ">
+
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav"
+        aria-expanded="false">
+        <!---  <span class="sr-only">
+            Toggle navigation
+          </span> -->
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+
+      <div class="navbar-brand header__logo-container">
+        <a href="/" class=" is-logo">
+          <img class="nav-logo-dark" src="../images/KAKAO72__logo1.png" width="180" height="35" alt="chocolate-logo">
+          <img class="nav-logo-white" src="../images/kakao72__white.png" width="180" height="35" alt="chcolate-logo">
+        </a>
+      </div>
+
+      <div class="header__menu-items-container">
+        <div class="collapse navbar-collapse" id="collapsable-nav">
+          <ul class=" header__items navbar-nav mr-auto">
+            <li class="header__item nav-item active">
+              <a class="header__link nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+          
+
+            <li class="header__item nav-item">
+              <a class=" header__link nav-link disabled" href="../html/personal.html" tabindex="-1"
+                aria-disabled="true">personalisation</a>
+            </li>
+
+            <li class="header__item nav-item">
+              <a class=" header__link nav-link disabled" href="../html/package.html" tabindex="-1"
+                aria-disabled="true">packaging</a>
+            </li>
+
+            <li>
+              <!--search form!-->
+              <div class="header__item">
+                <div id="search-region">
+                  <form action="search" method="get" id="btn-2">
+                    <input class="search__input" type="search" placeholder="What are you searching little chocoholic?">
+                  </form>
+                </div>
+
+              </div>
+              <button class="search__btn  btn hi "> Search </button>
+            </li>
+
+            <li>
+
+
+              <div class="header__item  toggle-cart header__cart" onclick="toggle()">
+
+
+                <img class="header__cart-img" alt="cart__img" src="../images/cart-icon-white.svg" width="30"
+                  height="30">
+              </div>
+            </li>
+          </ul>
+        </div>
+
+
+
+
+      </div>
+
+
+    </nav>
+  </header>
+
+
+  <div id="app-container">
+    <main id="main-region">
+      <div class="personalisation">
+        <div class="personalisation__header">
+          <div class="personalisation__header__title">Personalise your products</div>
+          <div class="personalisation__header__subtitle">Select a product category:</div>
+          <div id="personalisation-menu-region" class="personalisation__menu">
+            <div class="personalisation__menu-items cf">
+              <div class="personalisation__menu-item is-active" style="width: calc(16.6667%);">
+                <div class="personalisation__menu-item__img-container">
+                  <img
+                    src="https://max-chocolatier-backend.s.simplificator.com//uploads/cq_pages/page_values/image_field_translation/value/1398/en/large_truffl.png"
+                    alt="" class="personalisation__menu-item__img" />
+                </div>
+                <div class="personalisation__menu-item__name">Truffles</div>
+              </div>
+              <div class="personalisation__menu-item" style="width: calc(16.6667%);">
+                <div class="personalisation__menu-item__img-container">
+                  <img
+                    src="https://max-chocolatier-backend.s.simplificator.com//uploads/cq_pages/page_values/image_field_translation/value/1459/en/large_bar.png"
+                    alt="" class="personalisation__menu-item__img" />
+                </div>
+                <div class="personalisation__menu-item__name">Bars</div>
+              </div>
+              <div class="personalisation__menu-item" style="width: calc(16.6667%);">
+                <div class="personalisation__menu-item__img-container">
+                  <img
+                    src="https://max-chocolatier-backend.s.simplificator.com//uploads/cq_pages/page_values/image_field_translation/value/1462/en/large_platti.png"
+                    alt="" class="personalisation__menu-item__img" />
+                </div>
+                <div class="personalisation__menu-item__name">Plättlis</div>
+              </div>
+              <div class="personalisation__menu-item" style="width: calc(16.6667%);">
+                <div class="personalisation__menu-item__img-container">
+                  <img
+                    src="https://max-chocolatier-backend.s.simplificator.com//uploads/cq_pages/page_values/image_field_translation/value/1466/en/large_nuts_3.png"
+                    alt="" class="personalisation__menu-item__img" />
+                </div>
+                <div class="personalisation__menu-item__name">Nuts</div>
+              </div>
+              <div class="personalisation__menu-item" style="width: calc(16.6667%);">
+                <div class="personalisation__menu-item__img-container">
+                  <img
+                    src="../images/chocolate-box.png"
+                    alt="" class="personalisation__menu-item__img" />
+                </div>
+                <div class="personalisation__menu-item__name">Degustation box</div>
+              </div>
+              <div class="personalisation__menu-item" style="width: calc(16.6667%);">
+                <div class="personalisation__menu-item__img-container">
+                  <img src="../images/bwcube.png " alt="" class="personalisation__menu-item__img" />
+                </div>
+                <div class="personalisation__menu-item__name">Pastries</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="personalisation-page-region">
+        <div class="personalisation__page">
+          <div class="personalisation__page__icon-container">
+            <img
+              src="https://max-chocolatier-backend.s.simplificator.com//uploads/cq_pages/page_values/image_field_translation/value/1398/en/huge_truffl.png"
+              class="personalisation__page__icon" alt="" />
+          </div>
+          <div class="personalisation__page__title">You can enter your options here :</div>
+          <div class="personalisation__sections">
+            <div class="personalisation__section cf">
+              <div class="personalisation__section__text-container">
+                <div class="personalisation__section__img-container">
+                </div>
+
+                <div class="contact__form-title"> </div>
+
+                <form action="post" class="contact__form ">
+                  <div class="form__group form__group--sm">
+                    <input type="text" placeholder="name" name="fields[first_name]" required>
+
+                  </div>
+
+
+                  <div class="form__group form__group--sm">
+                    <input type="text" placeholder="surname" name="fields[last_name]" required>
+
+                  </div>
+                  <div class="form__group form__group--sm">
+                    <input type="email" placeholder="e-mail" name="fields[email]" required>
+
+                  </div>
+                  <div class="form__group form__group--sm">
+                    <input type="text" placeholder="number" name="fields[phone]" required>
+
+                  </div>
+                  <div class="form__group form__group--sm">
+                    <input type="text" placeholder="quantity of products" name="fields[quantity]" required>
+
+                  </div>
+                  <div class="form__group form__group--sm">
+                    <input type="text" placeholder="choice of products" name="fields[choice]" required>
+
+                  </div>
+
+
+
+                  <div class="form__group form__group--sm">
+                    <input type="date" name="fields[date]" required>
+
+                  </div>
+
+                  <div class="form__group form__group--sm">
+                    <input type="text" placeholder="occasion type" name="fields[occasion]" required>
+
+                  </div>
+
+
+
+                  <button type="submit" class="btn btn--secondary btn--brown"> Send request</button>
+
+                </form>
+
+                <div class="personalisation__section "> </div>
+                <div class="personalisation__section "></div>
+                <div class="personalisation__section "></div>
+                <div class="personalisation__section "></div>
+                <div class="personalisation__section "></div>
+                <div class="personalisation__section "></div>
+                <div class="personalisation__section "></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </main>
+
+
+    <div id="cart-region">
+      <div class="cart-container">
+        <div class="cart-overlay js-overlay "></div>
+        <div class="cart" data-test="cart">
+          <div class="cart__header"> <span class="cart__header-shopping-text">Order summary </span>
+            <span class="js-cart-counter">(1) </span>
+            <img src="../images/close.png" width="30" height="30" alt="close-icon" class="cart__header-close js-cart">
+
+
+          </div>
+
+          <div class="cart__items cart-items">
+            <div class="list-item">
+
+              <div class="cart__item">
+
+
+                <div class="cart__delete-item js-delete-item">
+                  <span class="cart__delete-item-text">Remove</span>
+
+                </div>
+                <div class="cart__product-image">
+                  <img src="../images/carton.png" alt="" class="cart__product-image ">
+                </div>
+                <div class="cart__product-text"> 24 truffles box
+                  <div class="cart__product-title"></div>
+                  <div class="cart__product-price"></div>
+                  <div class="cart__quantity">
+                    <span class="cart__quantity-title">Quantity</span>
+                    <div class="cart__quantity-counter">
+                      <input type="number" class="cart__quantity-value" value="1">
+                      <span role="button" class="cart__quantity-counter-decrease" onclick="decrement()"> - </span>
+                      <span role="button" class="cart__cantity-counter-increase " onclick="increment()">+</span>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    </div>
+    </body>
+    </html>
