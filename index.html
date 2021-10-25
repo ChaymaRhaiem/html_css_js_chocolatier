@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <title>Home</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script class="script" type="text/javascript" src="js/jquery.js" defer=""></script>
+
+  <link rel="stylesheet" href="css/Home.css" media="screen">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script src="js/controle.js"> </script>
+
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+  <header id="header-region" class="header cf">
+    <!--<nav class=" nav header cf"  id="nav-menu"> !-->
+    <nav class="navbar navbar-expand-sm  navbar-dark bg-dark bg-transparent ">
+
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav"
+        aria-expanded="false">
+        <!---  <span class="sr-only">
+          Toggle navigation
+        </span> -->
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+
+      <div class="navbar-brand header__logo-container">
+        <a href="/" class=" is-logo">
+          <img class="nav-logo-dark" src="images/KAKAO72__logo1.png" width="180" height="35" alt="chocolate-logo">
+          <img class="nav-logo-white" src="images/kakao72__white.png" width="180" height="35" alt="chcolate-logo">
+        </a>
+      </div>
+
+      <div class="header__menu-items-container">
+        <div class="collapse navbar-collapse" id="collapsable-nav">
+          <ul class=" header__items navbar-nav mr-auto">
+            <li class="header__item nav-item active">
+              <a class="header__link nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="header__item nav-item">
+              <a class="header__link nav-link" href="html/shop.html">Shop now </a>
+            </li>
+        
+          
+            <li class="header__item nav-item">
+              <a class=" header__link nav-link disabled" href="html/package.html" tabindex="-1"
+                aria-disabled="true">packaging</a>
+            </li>
+
+            <li class="header__item nav-item">
+              <a class=" header__link nav-link disabled" href="html/personal.html" tabindex="-1"
+                aria-disabled="true">personalisation</a>
+            </li>
+
+            <li>
+              <!--search form!-->
+              <div class="header__item">
+                <div id="search-region">
+                  <form action="search" method="get" id="btn-2">
+                    <input class="search__input" type="search" placeholder="What are you searching little chocoholic?">
+                  </form>
+                </div>
+
+              </div>
+              <button class="search__btn  btn hi "> Search </button>
+            </li>
+
+            <li>
+
+
+              <div class="header__item  toggle-cart header__cart" onclick="toggle()">
+
+
+                <img class="header__cart-img" alt="cart__img" src="images/cart-icon-white.svg" width="30" height="30">
+              </div>
+            </li>
+          </ul>
+        </div>
+
+
+
+
+      </div>
+
+
+    </nav>
+  </header>
+
+  <main id="main-region">
+
+    <section class="clearfix grey-5 section-1">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="images/colorful.jpg" alt="occasion">
+            <div class="carousel-caption d-block d-md-block">
+              <a href="#" class="btn btn-secondary home_btn home_carousel_btn">
+                <span class="btn-inner">Learn More</span>
+              </a>
+              <h3>Mother's day </h3>
+              <p class="slider-title">give mom
+                a range of delicious chocolates</p>
+
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="images/truffles.jpg" alt="truffles">
+            <div class="carousel-caption d-block d-md-block">
+              <a href="#" class="btn btn-secondary home_btn home_carousel_btn">
+                <span class="btn-inner">Learn More</span>
+              </a>
+              <h3>Truffles</h3>
+              <p class="slider-title">Try our signature truffles!</p>
+
+            </div>
+          </div>
+
+
+          <div class="item">
+            <img src="images/display.jpg" alt="Subscribe">
+            <div class="carousel-caption d-block d-md-block">
+              <a href="#" class="btn btn-secondary home_btn home_carousel_btn">
+                <span class="btn-inner">Learn More</span>
+              </a>
+              <h3>Exquisite treats </h3>
+
+              <p class="slider-title">Subscribe for a taste of our delicious collection </p>
+
+            </div>
+          </div>
+
+
+          <div class="item">
+            <img src="images/cover.jpg" alt="professional">
+            <div class="carousel-caption d-block d-md-block">
+              <a href="#" class="btn btn-secondary home_btn home_carousel_btn">
+                <span class="btn-inner">Learn More</span>
+              </a>
+              <h3>Corporate gifts </h3>
+              <p class="slider-title">Get the latest
+                Unhinged and Expert
+                chocolate bars.
+
+              </p>
+
+            </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+
+
+
+        <section class="align-center clearfix grey-5 section-2" id="carousel_f940">
+          <div class="clearfix sheet valign-middle sheet-1">
+            <span class="text text-1 align-center">Monthly picks </span>
+            <!---            <h2 class="custom-font font-playfair-display text text-2">Our best-sellers </h2> -->
+            <div class="list list-1">
+              <div class="repeater repeater-1">
+                <div class="align-center container-style list-item repeater-item">
+                  <div class="container-layout similar-container valign-bottom container-layout-1">
+                    <img class="align-center menu-img" alt="eggs" src="images/topeggs.jpg" width="200" height="150">
+                    <h6 class="text text-3">Black chocolate eggs </h6>
+                    <p class="text text-4">Delicate pearls of pure black chocolate. 150g.
+
+                    </p>
+                  </div>
+                </div>
+                <div class="align-center container-style list-item repeater-item">
+                  <div class="container-layout similar-container valign-bottom container-layout-2">
+                    <img class="align-center menu-img" alt="smalleggs" src="images/smalleggs.jpg" width="200"
+                      height="150">
+
+                    <h6 class="text text-5">Milk Chocolate Pearls - Box
+                    </h6>
+                    <p class="text text-6">Delicate pearls of pure milk chocolate. 115g.
+
+                    </p>
+                  </div>
+                </div>
+                <div class="container-style list-item repeater-item">
+                  <div class="container-layout similar-container valign-bottom container-layout-3">
+                    <img class="align-center  menu-img" alt="chocobar" src="images/bars.jpg" width="200" height="150">
+
+                    <h6 class="align-center text text-7">The 100% Bar </h6>
+                    <p class="align-center text text-8">Beautiful and smooth ,contains no sugar or milk </p>
+                  </div>
+                </div>
+                <div class="container-style list-item repeater-item">
+                  <div class="container-layout similar-container valign-bottom container-layout-4">
+                    <img class="align-center menu-img" alt="boxbar" src="images/barbox.jpg" width="200" height="150">
+
+                    <h6 class="align-center text text-9">Toffee caramel bar </h6>
+                    <p class="align-center text text-10">the creamy toffee pieces are a classic combination that never
+                      goes out of style. </p>
+                  </div>
+                  <img src="images/favorites.png" alt="section 1 bg" class="favourites-img-right">
+                </div>
+
+                <!--<div class="container-style list-item repeater-item">
+                  <div class="container-layout similar-container valign-bottom container-layout-5">
+                    <img class="align-center menu-img" src="images/goldbox.jpg" width="200" height=" 150">
+
+                    <h6 class="align-center text text-11"> Chocolate dipped fruit box </h6>
+                    <p class="align-center text text-12">each dipped in single origin 70% dark toffee chocolate.
+
+                    </p>
+                  </div>
+                </div>
+                <div class="container-style list-item repeater-item">
+                  <div class="container-layout similar-container valign-bottom container-layout-6">
+                    <img class="align-center menu-img" src="images/goldcandy.jpg" width="200" height=" 150">
+
+                    <h6 class="align-center text text-13">5 Candied Whole Clementines
+                    </h6>
+                    <p class="align-center text text-14">special treat for fans of orange and chocolate! </p>
+                  </div>
+                </div>
+              -->
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="align-right clearfix image section-3">
+          <div class="clearfix sheet valign-middle sheet-1">
+            <div class="list list-1">
+              <div class="repeater repeater-1">
+
+                <div class="black container-style list-item opacity opacity-50 repeater-item video-cover">
+                  <div class="container-layout similar-container valign-top container-layout-3"><span
+                      class="icon icon-circle icon-3">
+
+                      <img src="images/easteregg.png" alt="iconegg" height="55" width="55">
+
+                    </span>
+                    <h5 class="align-center custom-font font-lato text text-3">Easter</h5>
+                  </div>
+                </div>
+                <div class="black container-style list-item opacity opacity-50 repeater-item video-cover">
+                  <div class="container-layout similar-container valign-top container-layout-4"><span
+                      class="icon icon-circle icon-4">
+                      <img src="images/drinks.png" alt="icondrink" height="55" width="55">
+
+
+
+                    </span>
+                    <h5 class="align-center custom-font font-lato text text-4">Hot drinks</h5>
+                  </div>
+                </div>
+                <div class="black container-style list-item opacity opacity-50 repeater-item video-cover">
+                  <div class="container-layout similar-container valign-top container-layout-5"><span
+                      class="icon icon-circle icon-5">
+
+
+                      <img src="images/love.svg " alt="icon-heart" height="55" width="55">
+                    </span>
+                    <h5 class="align-center custom-font font-lato text text-5">Valentine's Day</h5>
+                  </div>
+                </div>
+                <div class="black container-style list-item opacity opacity-50 repeater-item video-cover">
+                  <div class="container-layout similar-container valign-top container-layout-6"><span
+                      class="icon icon-circle icon-6">
+
+
+                      <img src="images/sauce.png" alt="iconsauce" height="55" width="55">
+                    </span>
+                    <h5 class="align-center custom-font font-lato text text-6">Spreads &amp; More</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+      </div>
+
+    </section>
+    <section class="clearfix grey-5 section-5">
+      <div class="clearfix sheet sheet-1">
+        <div class="personalisation__section">
+
+          <div class="personalisation__section__text-container">
+            <span class="personalisation__section__text-container__title">
+
+              personalisation possibilities
+            </span>
+            We offer infinite personalisation possibilities and we'd love to make your wishes come true.
+            Contact us to get our creative juices flowing in the direction of your dreams!
+
+            Wanna submit your request now ? <a href="html/personal.html"> Here </a> it is.
+
+
+          </div>
+        </div>
+
+        <div class="personalisation__section__img-container">
+          <img src="images/fancy.jpg" alt="packaging pic" class="personalisation__section__img">
+
+        </div>
+      </div>
+    </section>
+    <section class="clearfix grey-5 section-6">
+      <div class="clearfix sheet sheet-1">
+        <div class="personalisation__section">
+          <div class="personalisation__section__img-container">
+            <img src="images/blue.jpg" alt="packaging pic" class="personalisation__section__img">
+          </div>
+
+          <div class="personalisation__section__text-container">
+            <span class="personalisation__section__text-container__title">
+
+              Sustainable packaging
+            </span>
+            We have done what we can to make our packaging as sustainable as possible. Plastics contribute heavily to
+            environmental degradation and we wanted to ensure sustainability of our products by using the least plastic
+            possible.
+            <a href="html/package.html"> learn more about our packaging </a> .
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section-7">
+      <div class="animation-container">
+        <div class="loader">
+          <span></span>
+          <div class="chocolate-box">
+            <img class="first" src="images/missbox.png" alt="animationbox" width="800">
+            <img class="second" src="images/boxofchoc.png" alt="2ndanimationbox" width="800">
+          </div>
+
+        </div>
+      </div>
+
+
+    </section>
+
+
+  </main>
+
+
+
+
+  <section class="section-8">
+    <div class="home__contact">
+      <img class="home__contact-bg" src="images/banner.jpg" alt="contact-bg">
+      <div class="home__contact-box">
+        <img class="home__contact-logo" src="images/logo_only.png" alt="contact-logo">
+        <div class="home__contact-title">
+          Visit us and get a real taste of chocolate
+        </div>
+        <div class="home__contact-address">
+          random address,6002 tunisia
+          <br>
+          <br>
+            "shop@kakao72.com"
+          <br>
+          <br>
+          <br>
+          "+216 7169685"
+          <br>
+
+          <br>
+          <br>
+          <br>
+          <a href="html/contact.html" class="btn btn-secondary btn--brown home__contact-link">
+            <span class="btn__inner-text"> Contact us </span>
+            <span class="right-arrow"> </span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+
+  </section>
+
+
+  <footer class="footer-region">
+    <nav class="footer">
+      <div class="footer__logo">
+        <img src="images/KAKAO72__logo1.png" class="footer__logo-img" alt="kakao72footer">
+      </div>
+      <div class="footer__social">
+        <a href="www.instagram.com" target="_blank">
+          <img src="images/instagram.png" alt="insta" class="footer__social-icon">
+
+        </a>
+        <a href="www.facebook.com" target="_blank">
+          <img src="images/facebook.png" alt="fb" class="footer__social-icon">
+
+        </a>
+        <a href="www.twitter.com" target="_blank">
+          <img src="images/twitter.png" alt="twitter" class="footer__social-icon">
+
+        </a>
+      </div>
+      <div class="footer__menu">
+        <div class="footer__items">
+          <div class="footer__item">
+            <a href="shop.html" target="_blank" class="footer__link"> Products </a>
+
+          </div>
+
+          <div class="footer__item">
+            <a href="pages/terms.html " target="_blank" class="footer__link"> Terms & conditions </a>
+          </div>
+          <div class="footer__item">
+            <a href="pages/contact.html" target="_blank" class="footer__link">Contact
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+    </nav>
+
+  </footer>
+
+  <div id="cart-region">
+    <div class="cart-container">
+      <div class="cart-overlay  "></div>
+      <div class="cart" data-test="cart">
+        <div class="cart__header"> <span class="cart__header-shopping-text">Order summary </span>
+          <span class="js-cart-counter">(1) </span>
+          <img src="images/close.png" width="30" height="30" alt="close-icon" class="cart__header-close">
+
+
+        </div>
+
+        <div class="cart__items cart-items">
+          <div class="list-item">
+
+            <div class="cart__item">
+
+
+              <div class="cart__delete-item "  >
+                <button  onclick="hide_cart()" class="btn btn--secondary">
+                <span class="cart__delete-item-text">Remove</span> </button>
+
+              </div>
+              <div class="cart__product-image">
+                <img src="images/carton.png" alt="" class="cart__product-image ">
+              </div>
+              <div class="cart__product-text"> 24 truffles box
+                <div class="cart__product-title"></div>
+                <div class="cart__product-price"></div>
+                <div class="cart__quantity">
+                  <span class="cart__quantity-title">Quantity</span>
+                  <div class="cart__quantity-counter">
+                    <input type="number" class="cart__quantity-value" value="1">
+                    <span role="button" class="cart__quantity-counter-decrease" onclick="decrement()"> - </span>
+                    <span role="button" class="cart__cantity-counter-increase " onclick="increment()">+</span>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <div class="cart__footer" >
+
+
+            <div class="cart__subtotal"> Total : 
+
+            <span class="cart__subtotal-price" > 30dt  </span>
+          </div>
+
+          <a href="html/checkout.html" class="cart__link-checkout btn btn--secondary btn--brown" >
+            <span class="btn__inner-text">
+                Continue to checkout 
+            </span>
+          </a>
+
+
+
+        </div>
+      </div>
+
+
+    </div>
+<script>
+function hide_cart() {
+  var x = document.getElementsByClassName("cart__item");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } 
+}
+</script>
+</body>
+
+</html>
